@@ -1,0 +1,9 @@
+{
+    "name": "Hello World!",
+    "description": "My first project with j5",
+    "version": "0.0.1",
+    "dependencies": {
+        "johnny-five": "latest",
+        "readline": "^1.3.0"
+    }
+}
