@@ -1,0 +1,92 @@
+
+
+.box-led {
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+
+.box-led-middle {
+    width: 25%;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.box-led-middle-green {
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+}
+.box-led-middle-blue {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.box-led-middle-purple {
+    background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+}
+.box-led-middle-yellow {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+.box-led-middle-love {
+    background-image: linear-gradient(to bottom, #d10464 0%, #e73827 100%);
+}
+
+
+
+
+.box-led-left {
+    float: left;
+    width: 15%;
+    background: #fff;
+    text-align: center;
+    height: 196px;
+    border: 2px solid #ff9a44;
+}
+
+.box-led-left-img {
+    border: 2px solid #e73827;
+}
+
+.box-led-left i{
+    margin-top: 50px;
+    font-size: 5em;
+}
+
+.led-on {
+    text-shadow: 0px 0px 50px rgb(255, 251, 0);
+}
+
+.led-off {
+    color: rgb(112, 112, 112);
+    text-shadow: none;
+}
+
+
+
+
+.content-led{
+    padding: 25px;
+}
+
+.btn-led {
+    margin-top: 50px;
+    padding: 15px;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-led:hover {
+    background: #fff;
+    color: rgb(24, 24, 24);
+}
+
+
+
+.input-love {
+    width: 400px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    display: inline-block;
+    font-size: 16px;
+    padding: 13px 16px 17px 16px;
+}
