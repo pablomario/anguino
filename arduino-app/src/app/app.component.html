@@ -1,0 +1,87 @@
+
+<!-- All led -->
+<div class="box-led" style="text-align:center">
+  <div class="box-led-left">
+      <i class="far fa-lightbulb" [ngClass]="{
+        'led-on': statusLed,
+        'led-off': !statusLed
+      }"></i> 
+      <p class="content-led">
+        <span>
+          <em> Actual Status: </em> {{ statusLed }}
+        </span>    
+      </p>
+  </div>
+  <div class="box-led-rigth">
+    <p class="content-led"> 
+      <span class="btn-led" (click)="todosLosLed()"> 
+        <i class="far fa-lightbulb"></i> Encender Led 
+      </span>
+    </p>
+  </div>
+</div>
+
+<!-- All led -->
+<div class="box-led box-led-middle-love" style="text-align:center">
+    <div class="box-led-left box-led-left-img">
+        <img style="height: 100%; width: auto" src="/assets/images/lcd.png">
+    </div>
+    <div class="box-led-rigth">
+      <p class="content-led"> 
+        <input #love class="input-love" type="text" placeholder="Con mucho amor">
+        <span class="btn-led btn-led-love" (click)="sendLove(love.value)"> 
+          <i class="far fa-heart"></i> Dime algo bonito
+        </span>
+      </p>
+    </div>
+  </div>
+
+<!-- A Led unico -->
+<div class="box-led box-led-middle box-led-middle-green" style="text-align:center">
+  <div class="box-led-rigth">
+    <p class="content-led"> 
+      <span class="btn-led" (click)="singleLedA()"> 
+        <i class="far fa-lightbulb"></i> Encender Led A
+      </span>
+    </p>
+  </div>
+</div>
+
+<!-- B Led unico -->
+<div class="box-led box-led-middle box-led-middle-blue" style="text-align:center">
+  <div class="box-led-rigth">
+    <p class="content-led"> 
+      <span class="btn-led" (click)="singleLedB()"> 
+        <i class="far fa-lightbulb"></i> Encender Led B
+      </span>
+    </p>
+  </div>
+</div>
+
+<!-- C Led unico -->
+<div class="box-led box-led-middle box-led-middle-purple" style="text-align:center">
+  <div class="box-led-rigth">
+    <p class="content-led"> 
+      <span class="btn-led" (click)="singleLedC()"> 
+        <i class="far fa-lightbulb"></i> Encender Led C
+      </span>
+    </p>
+  </div>
+</div>
+
+
+<!-- D Led unico -->
+<div class="box-led box-led-middle box-led-middle-yellow" style="text-align:center">
+  <div class="box-led-rigth">
+    <p class="content-led"> 
+      <span class="btn-led" (click)="singleLedD()"> 
+        <i class="far fa-lightbulb"></i> Encender Led D
+      </span>
+    </p>
+  </div>
+</div>
+
+
+
+
+<router-outlet></router-outlet>
