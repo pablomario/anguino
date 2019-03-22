@@ -32,7 +32,8 @@ app.get('/love', function (req, res) {
 
 function cambiarMensaje( _input ) {
   var lcd = new five.LCD({ pins: [7, 8, 9, 10, 11, 12] });
-  lcd.print( _input );
+  lcd.cursor(0,0).print( _input );
+  lcd.cursor(1,0).print( 'Listen 3434' );
 }
 
 
@@ -48,6 +49,7 @@ function starServer(){
     console.log("-===================-"); 
     console.warn('> Listening on port 3434!');
   });
+  cambiarMensaje('Server ON')
 }
 
 board.on('ready', starServer);

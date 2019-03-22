@@ -82,7 +82,16 @@ sendLove(_love: string): void {
       console.error('Error: ', error);
     }, () => { }
   );
+}
 
+resetLove(_love: string): void {
+  this.http.get( 'http://localhost:3434/' ).subscribe(
+    (response: StatusLed) => {
+      console.log('Respone: ', response.status);
+    }, (error) => {
+      console.error('Error: ', error);
+    }, () => { }
+  );
 }
 
 
